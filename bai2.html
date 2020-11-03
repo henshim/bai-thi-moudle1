@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng cho trước (Giả sử tất cả các phần tử trong mảng không giống nhau).
+Hàm có 2 tham số: số phần tử cần tìm, mảng cho trước.
+Viết chương trình với một mảng số nguyên được khởi tạo trước.
+Nhập vào một giá trị bất kỳ, sau đó kiểm tra xem giá trị số nguyên bất kỳ vừa nhập có nằm trong mảng đã nhập hay không.
+-->
+<script>
+    let arr=[1,5,64,85,69,55];
+    let x=55;
+function so(x,arr){
+    for(let i=0;i<arr.length;i++){
+        if (arr[i]===x){
+            return i;
+        }
+    }
+}
+document.write(so(x,arr));
+
+
+    let arr2=[5,8,70,20,77,3,10];
+    let y=+prompt("nhap so bat ky: ");
+function kiemtra(y,arr2){
+    for (let i=0;i<arr2.length;i++){
+        if (arr[i]==y){
+            return "so " + y + " nam trong mang";
+        }
+    }
+}
+document.write(kiemtra(y,arr));
+</script>
+</body>
+</html>
