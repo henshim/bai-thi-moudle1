@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bai 2</title>
 </head>
 <body>
 <!--Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng cho trước (Giả sử tất cả các phần tử trong mảng không giống nhau).
@@ -12,7 +12,7 @@ Nhập vào một giá trị bất kỳ, sau đó kiểm tra xem giá trị số
 -->
 <script>
     let arr=[1,5,64,85,69,55];
-    let x=55;
+    let x=64;
 function so(x,arr){
     for(let i=0;i<arr.length;i++){
         if (arr[i]===x){
@@ -24,11 +24,11 @@ document.write(so(x,arr));
 
 
     let arr2=[5,8,70,20,77,3,10];
-    let y=+prompt("nhap so bat ky: ");
+    let y= +prompt("Nhap so bat ky: ");
 function kiemtra(y,arr2){
     for (let i=0;i<arr2.length;i++){
-        if (arr[i]==y){
-            return "so " + y + " nam trong mang";
+        if (arr[i]===y){
+            return " So " + y + " nam trong mang";
         }
     }
 }
